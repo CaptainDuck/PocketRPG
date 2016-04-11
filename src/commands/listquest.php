@@ -2,8 +2,8 @@
 
 namespace Sandertv\Quests;
 
-use pocketmine\plugin\pluginbase;
-use pocketmine\utils\config;
+use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\event\listener;
 use pocketmine\command\command;
