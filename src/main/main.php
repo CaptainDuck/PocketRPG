@@ -2,11 +2,11 @@
 
 namespace Sandertv\Quests
 
-use pocketmine\plugin\pluginbase;
-use pocketmine\utils\config;
+use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
 
-class listquest extends PluginBase implements Listener {
+class main extends PluginBase {
   
   public function onLoad() {
     $this->getLogger()->info("Quests loading!");
