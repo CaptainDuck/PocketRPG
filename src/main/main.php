@@ -2,7 +2,9 @@
 
 namespace Sandertv\Quests
 
-use pocketmine\
+use pocketmine\plugin\pluginbase;
+use pocketmine\utils\config;
+use pocketmine\utils\TextFormat as TF;
 
 class listquest extends PluginBase implements Listener {
   
