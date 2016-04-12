@@ -35,7 +35,7 @@ class startquest extends PluginBase {
             
           case "3":
             if($p->getExpLevel()) == 2) {
-              $p->sendMessage(TF::GRAY > "Quest started: Searching the Stick");
+              $p->sendMessage(TF::GRAY . "Quest started: Searching the Stick");
               $p->sendMessage(TF::AQUA . "Collect 1 stick");
               $p->givePermission("quest.3.cancomplete");
             } else {
@@ -45,7 +45,7 @@ class startquest extends PluginBase {
 
           case "4":
             if($p->getExpLevel()) == 3) {
-              $p->sendMessage(TF::GRAY > "Quest started: Filling the Well");
+              $p->sendMessage(TF::GRAY . "Quest started: Filling the Well");
               $p->sendMessage(TF::AQUA . "Find a water Bucket");
               $p->givePermission("quest.4.cancomplete");
             } else {
@@ -55,7 +55,7 @@ class startquest extends PluginBase {
             
           case "5":
             if($p->getExpLevel()) == 4) {
-              $p->sendMessage(TF::GRAY > "Quest started: The lost Gem");
+              $p->sendMessage(TF::GRAY . "Quest started: The lost Gem");
               $p->sendMessage(TF::AQUA . "Collect 1 Emerald");
               $p->givePermission("quest.5.cancomplete");
             } else {
@@ -65,7 +65,7 @@ class startquest extends PluginBase {
             
           case "6":
             if($p->getExpLevel()) == 5) {
-              $p->sendMessage(TF::GRAY > "Quest started: Freezingly Cold");
+              $p->sendMessage(TF::GRAY . "Quest started: Freezingly Cold");
               $p->sendMessage(TF::AQUA . "Collect 32 ice blocks");
               $p->givePermission("quest.6.cancomplete");
             } else {
@@ -75,7 +75,7 @@ class startquest extends PluginBase {
             
           case "7":
             if($p->getExpLevel()) == 6) {
-              $p->sendMessage(TF::GRAY > "Quest started: Gravedigger");
+              $p->sendMessage(TF::GRAY . "Quest started: Gravedigger");
               $p->sendMessage(TF::AQUA . "Collect 5 bones and 5 rotten flesh");
               $p->givePermission("quest.7.cancomplete");
             } else {
@@ -85,7 +85,7 @@ class startquest extends PluginBase {
             
           case "8":
             if($p->getExpLevel()) == 7) {
-              $p->sendMessage(TF::GRAY > "Quest started: Fish Galore");
+              $p->sendMessage(TF::GRAY . "Quest started: Fish Galore");
               $p->sendMessage(TF::AQUA . "Collect 16 fishes");
               $p->givePermission("quest.8.cancomplete");
             } else {
@@ -95,7 +95,7 @@ class startquest extends PluginBase {
             
           case "9":
             if($p->getExpLevel()) == 8) {
-              $p->sendMessage(TF::GRAY > "Quest started: Burning Souls");
+              $p->sendMessage(TF::GRAY . "Quest started: Burning Souls");
               $p->sendMessage(TF::AQUA . "Collect 5 blaze powder and 5 blaze rods");
               $p->givePermission("quest.9.cancomplete");
             } else {
@@ -105,7 +105,7 @@ class startquest extends PluginBase {
             
           case "10":
             if($p->getExpLevel()) == 9) {
-              $p->sendMessage(TF::GRAY > "Quest started: The Experiment");
+              $p->sendMessage(TF::GRAY . "Quest started: The Experiment");
               $p->sendMessage(TF::AQUA . "Collect 10 glowstone dust and 10 redstone");
               $p->givePermission("quest.10.cancomplete");
             } else {
