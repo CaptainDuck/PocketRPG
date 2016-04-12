@@ -19,7 +19,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 5 pieces of wheat.");
               $p->givePermission("quest.1.cancomplete");
             } else {
-              $p->sendMessage(TF::RED . "You can not start this quest yet.");
+              $p->sendMessage(TF::RED . "You are not the right level to start this quest.");
             }
             break;
           
@@ -29,7 +29,7 @@ class startquest extends PluginBase {
               $p sendMessage(TF::AQUA . "Collect 16 Oak Saplings")
               $p->givePermission("quest.2.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
             
@@ -39,7 +39,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 1 stick");
               $p->givePermission("quest.3.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
 
@@ -49,7 +49,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Find a water Bucket");
               $p->givePermission("quest.4.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
             
@@ -59,7 +59,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 1 Emerald");
               $p->givePermission("quest.5.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
             
@@ -69,7 +69,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 32 ice blocks");
               $p->givePermission("quest.6.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
             
@@ -79,7 +79,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 5 bones and 5 rotten flesh");
               $p->givePermission("quest.7.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
             
@@ -89,7 +89,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 16 fishes");
               $p->givePermission("quest.8.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
             
@@ -99,7 +99,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 5 blaze powder and 5 blaze rods");
               $p->givePermission("quest.9.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
             
@@ -109,7 +109,7 @@ class startquest extends PluginBase {
               $p->sendMessage(TF::AQUA . "Collect 10 glowstone dust and 10 redstone");
               $p->givePermission("quest.10.cancomplete");
             } else {
-              $p->sendMessage(TF:: RED . "You can not start this quest yet.");
+              $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
             }
             break;
           
