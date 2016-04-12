@@ -19,7 +19,7 @@ class listquest extends PluginBase implements Listener {
         switch(strtolower(array_shift($args))) {
           case "1":     // QUEST PAGE 1
             $p->sendMessage(TF::BOLD . DARK_GREEN . "Quests page 1:");
-              if($p->hasPermission("quest") || $p->hasPermission("quest.1") || $p->hasPermission("quest.1.completed") || $p->getExpLevel() == 0 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.1") || $p->hasPermission("quest.1.completed") || $p->getExpLevel() == 0) {
                   $p->sendMessage(TF::GREEN . "1 - Helping the Farmer - lvl. 0");
               } elseif($p->getExpLevel()) == 0) {
                   $p->sendMessage(TF::YELLOW . "1 - Helping the Farmer - lvl. 0");
@@ -27,7 +27,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "1 - Helping the Farmer - lvl. 0");
               }
 
-              if($p->hasPermission("quest") || $p->hasPermission("quest.2") || $p->hasPermission("quest.2.completed") || $p->getExpLevel() == 1 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.2") || $p->hasPermission("quest.2.completed") || $p->getExpLevel() == 1) {
                   $p->sendMessage(TF::GREEN . "2 - Not enough Trees - lvl. 1");
               } elseif($p->getExpLevel()) == 1) {
                   $p->sendMessage(TF::YELLOW . "2 - Not enough Trees - lvl. 1");
@@ -35,7 +35,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "2 - Not enough Trees - lvl. 1");
               }
           
-              if($p->hasPermission("quest") || $p->hasPermission("quest.3") || $p->hasPermission("quest.3.completed") || $p->getExpLevel() == 2 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.3") || $p->hasPermission("quest.3.completed") || $p->getExpLevel() == 2) {
                   $p->sendMessage(TF::GREEN . "3 - Searching the Stick - lvl. 2");
               } elseif($p->getExpLevel()) == 2) {
                   $p->sendMessage(TF::YELLOW . "3 - Searching the Stick - lvl. 2");
@@ -43,7 +43,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "3 - Searching the Stick - lvl. 2");
               }
           
-              if($p->hasPermission("quest") || $p->hasPermission("quest.4") || $p->hasPermission("quest.4.completed") || $p->getExpLevel() == 3 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.4") || $p->hasPermission("quest.4.completed") || $p->getExpLevel() == 3) {
                   $p->sendMessage(TF::GREEN . "4 - Filling the Well - lvl. 3");
               } elseif($p->getExpLevel()) == 3) {
                   $p->sendMessage(TF::YELLOW . "4 - Filling the Well - lvl. 3");
@@ -51,7 +51,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "4 - Filling the Well - lvl. 3");
               }
 
-              if($p->hasPermission("quest") || $p->hasPermission("quest.5") || $p->hasPermission("quest.5.completed") || $p->getExpLevel() == 4 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.5") || $p->hasPermission("quest.5.completed") || $p->getExpLevel() == 4) {
                   $p->sendMessage(TF::GREEN . "5 - The lost Gem - lvl. 4");
               } elseif($p->getExpLevel()) == 4) {
                   $p->sendMessage(TF::YELLOW . "5 - The lost Gem - lvl. 4");
@@ -62,7 +62,7 @@ class listquest extends PluginBase implements Listener {
                               //QUEST PAGE 2
           case "2":
             $p->sendMessage(TF::BOLD . DARK_GREEN . "Quests page 2:");
-              if($p->hasPermission("quest") || $p->hasPermission("quest.6") || $p->hasPermission("quest.6.completed") || $p->getExpLevel() == 5 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.6") || $p->hasPermission("quest.6.completed") || $p->getExpLevel() == 5) {
                   $p->sendMessage(TF::GREEN . "6 - Freezingly cold - lvl. 5");
               } elseif($p->getExpLevel()) == 5) {
                   $p->sendMessage(TF::YELLOW . "6 - Freezingly cold - lvl. 5");
@@ -72,7 +72,7 @@ class listquest extends PluginBase implements Listener {
               break;
               
             $p->sendMessage(TF::BOLD . DARK_GREEN . "Quests page 2:");
-              if($p->hasPermission("quest") || $p->hasPermission("quest.6") || $p->hasPermission("quest.7.completed") || $p->getExpLevel() == 6 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.6") || $p->hasPermission("quest.7.completed") || $p->getExpLevel() == 6) {
                   $p->sendMessage(TF::GREEN . "7 - Gravedigger - lvl. 6");
               } elseif($p->getExpLevel()) == 6) {
                   $p->sendMessage(TF::YELLOW . "7 - Gravedigger - lvl. 6");
@@ -82,7 +82,7 @@ class listquest extends PluginBase implements Listener {
             break;
             
             $p->sendMessage(TF::BOLD . DARK_GREEN . "Quests page 2:");
-              if($p->hasPermission("quest") || $p->hasPermission("quest.8") || $p->hasPermission("quest.8.completed") || $p->getExpLevel() == 7 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.8") || $p->hasPermission("quest.8.completed") || $p->getExpLevel() == 7) {
                   $p->sendMessage(TF::GREEN . "8 - Fish Galore - lvl. 7");
               } elseif($p->getExpLevel()) == 7) {
                   $p->sendMessage(TF::YELLOW . "8 - Fish Galore - lvl. 7");
@@ -92,7 +92,7 @@ class listquest extends PluginBase implements Listener {
               break;
       
             $p->sendMessage(TF::BOLD . DARK_GREEN . "Quests page 2:");
-              if($p->hasPermission("quest") || $p->hasPermission("quest.9") || $p->hasPermission("quest.9.completed") || $p->getExpLevel() == 8 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.9") || $p->hasPermission("quest.9.completed") || $p->getExpLevel() == 8) {
                   $p->sendMessage(TF::GREEN . "9 - Burning Souls - lvl. 8");
               } elseif($p->getExpLevel()) == 8) {
                   $p->sendMessage(TF::YELLOW . "9 - Burning Souls - lvl. 8");
@@ -102,7 +102,7 @@ class listquest extends PluginBase implements Listener {
               break;
 
             $p->sendMessage(TF::BOLD . DARK_GREEN . "Quests page 2:");
-              if($p->hasPermission("quest") || $p->hasPermission("quest.10") || $p->hasPermission("quest.10.completed") || $p->getExpLevel() == 9 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.10") || $p->hasPermission("quest.10.completed") || $p->getExpLevel() == 9) {
                   $p->sendMessage(TF::GREEN . "10 - The Experiment - lvl. 9");
               } elseif($p->getExpLevel()) == 9) {
                   $p->sendMessage(TF::YELLOW . "10 - The Experiment - lvl. 9");
@@ -114,7 +114,7 @@ class listquest extends PluginBase implements Listener {
                             //QUEST PAGE 1
           default:
             $p->sendMessage(TF::BOLD . DARK_GREEN . "Quests page 1:");
-              if($p->hasPermission("quest") || $p->hasPermission("quest.1") || $p->hasPermission("quest.1.completed") || $p->getExpLevel() == 0 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.1") || $p->hasPermission("quest.1.completed") || $p->getExpLevel() == 0) {
                   $p->sendMessage(TF::GREEN . "1 - Helping the Farmer - lvl. 0");
               } elseif($p->getExpLevel()) == 0) {
                   $p->sendMessage(TF::YELLOW . "1 - Helping the Farmer - lvl. 0");
@@ -122,7 +122,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "1 - Helping the Farmer - lvl. 0");
               }
 
-              if($p->hasPermission("quest") || $p->hasPermission("quest.2") || $p->hasPermission("quest.2.completed") || $p->getExpLevel() == 1 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.2") || $p->hasPermission("quest.2.completed") || $p->getExpLevel() == 1) {
                   $p->sendMessage(TF::GREEN . "2 - Not enough Trees - lvl. 1");
               } elseif($p->getExpLevel()) == 1) {
                   $p->sendMessage(TF::YELLOW . "2 - Not enough Trees - lvl. 1");
@@ -130,7 +130,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "3 - Not enough Trees - lvl. 1");
               }
           
-              if($p->hasPermission("quest") || $p->hasPermission("quest.3") || $p->hasPermission("quest.3.completed") || $p->getExpLevel() == 2 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.3") || $p->hasPermission("quest.3.completed") || $p->getExpLevel() == 2) {
                   $p->sendMessage(TF::GREEN . "3 - Searching the Stick - lvl. 2");
               } elseif($p->getExpLevel()) == 2) {
                   $p->sendMessage(TF::YELLOW . "3 - Searching the Stick - lvl. 2");
@@ -138,7 +138,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "3 - Searching the Stick - lvl. 2");
               }
           
-              if($p->hasPermission("quest") || $p->hasPermission("quest.4") || $p->hasPermission("quest.4.completed") || $p->getExpLevel() == 3 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.4") || $p->hasPermission("quest.4.completed") || $p->getExpLevel() == 3) {
                   $p->sendMessage(TF::GREEN . "4 - Filling the Well - lvl. 3");
               } elseif($p->getExpLevel()) == 3) {
                   $p->sendMessage(TF::YELLOW . "4 - Filling the Well - lvl. 3");
@@ -146,7 +146,7 @@ class listquest extends PluginBase implements Listener {
                   $p->sendMessage(TF::RED . "4 - Filling the Well - lvl. 3");
               }
 
-              if($p->hasPermission("quest") || $p->hasPermission("quest.5") || $p->hasPermission("quest.5.completed") || $p->getExpLevel() == 4 {
+              if($p->hasPermission("quest") || $p->hasPermission("quest.5") || $p->hasPermission("quest.5.completed") || $p->getExpLevel() == 4) {
                   $p->sendMessage(TF::GREEN . "5 - The lost Gem - lvl. 4");
               } elseif($p->getExpLevel()) == 4) {
                   $p->sendMessage(TF::YELLOW . "5 - The lost Gem - lvl. 4");
