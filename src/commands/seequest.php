@@ -17,14 +17,16 @@ class seequest extends PluginBase {
               $p->sendMessage(TF:: GRAY . "Quest 1 - Helping the Farmer "TF:: GREEN . "- Completed!");
               $p->sendMessage(TF:: AQUA . "Collect 5 pieces of wheat.");
               $p->sendMessage(TF:: GREEN . "lvl. 0");
-            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() > 0) {
+            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() = 0) {
               $p->sendMessage(TF:: GRAY . "Quest 1 - Helping the Farmer "TF:: RED . "- Uncompleted!");
               $p->sendMessage(TF:: AQUA . "Collect 5 pieces of wheat.");
               $p->sendMessage(TF:: YELLOW . "lvl. 0");
             } else {
               $p->sendMessage(TF:: RED . "You have not yet started this quest.");
             }
-        
+            break;
+            
+          case "2":
         }
     }
 
