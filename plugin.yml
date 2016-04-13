@@ -3,3 +3,21 @@ main: Quests\main
 version: 0.0.1
 api: [2.0.0]
 author: Sandertv
+
+commands:
+  startquest:
+    description: Start a quest
+    usage: /startquest <number>
+    permission: default
+  listquest:
+    description: Gives a list of quests
+    usage: /listquest <number>
+    permission: default
+  seequest:
+    description: See a currently opened quest
+    usage: /seequest <number>
+    permission: default
+  endquest:
+    description: Finish a quest
+    usage: /endquest <number>
+    permission: default
