@@ -28,7 +28,7 @@ class endquest extends PluginBase {
               
           case: "2":
             if($p->hasPermission("quest.2.cancomplete") || $p->getInventory()->getId(...)->getCount() > ...) {
-              $p->getInventory()->removeItem(296);
+              $p->getInventory()->removeItem(...);
               $p->givePermission("quest.2.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
