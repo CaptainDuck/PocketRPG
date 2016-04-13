@@ -1,6 +1,6 @@
 <?php
 
-namespace Sandertv\Quests
+namespace Sandertv\Quests;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
@@ -21,3 +21,4 @@ class main extends PluginBase {
   public function onDisable() {
     $this->getLogger()->info("Disabling Quests!");
   }
+}
