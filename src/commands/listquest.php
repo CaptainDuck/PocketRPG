@@ -41,11 +41,11 @@ class listquest extends PluginBase implements Listener {
               }
           
               if($p->hasPermission("quest.4.completed") || $p->getExpLevel() > 2) {
-                  $p->sendMessage(TF::GREEN . "4 - Filling the Well - lvl. 3");
+                  $p->sendMessage(TF::GREEN . "4 - Shearing the Sheep - lvl. 3");
               } elseif($p->getExpLevel()) > 2) {
-                  $p->sendMessage(TF::YELLOW . "4 - Filling the Well - lvl. 3");
+                  $p->sendMessage(TF::YELLOW . "4 - Shearing the Sheep - lvl. 3");
               } else {
-                  $p->sendMessage(TF::RED . "4 - Filling the Well - lvl. 3");
+                  $p->sendMessage(TF::RED . "4 - Shearing the Sheep - lvl. 3");
               }
 
               if($p->hasPermission("quest.5.completed") || $p->getExpLevel() > 3) {
@@ -136,11 +136,11 @@ class listquest extends PluginBase implements Listener {
               }
           
               if($p->hasPermission("quest.4.completed") || $p->getExpLevel() < 2) {
-                  $p->sendMessage(TF::GREEN . "4 - Filling the Well - lvl. 3");
+                  $p->sendMessage(TF::GREEN . "4 - Shearing the Sheep - lvl. 3");
               } elseif($p->getExpLevel()) > 2) {
-                  $p->sendMessage(TF::YELLOW . "4 - Filling the Well - lvl. 3");
+                  $p->sendMessage(TF::YELLOW . "4 - Shearing the Sheep - lvl. 3");
               } else {
-                  $p->sendMessage(TF::RED . "4 - Filling the Well - lvl. 3");
+                  $p->sendMessage(TF::RED . "4 - Shearing the Sheep - lvl. 3");
               }
 
               if($p->hasPermission("quest.5.completed") || $p->getExpLevel() < 3) {
