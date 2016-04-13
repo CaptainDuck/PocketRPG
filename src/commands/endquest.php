@@ -24,6 +24,10 @@ class endquest extends PluginBase {
               $amount_1 = $this->config->get("GOLD_AMOUNT_QUEST_1")
               $gold_1 = Item::get(Item::GOLD_INGOT, 0, $amount)
               $p->getInventory()->addItem($gold_1);
+              $p->sendPopup(TF:: GREEN . "Congratulations, you leveled up!")
+            } else {
+              $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
+            }
               break;
               
           case: "2":
@@ -36,7 +40,11 @@ class endquest extends PluginBase {
               $amount_2 = $this->config->get("GOLD_AMOUNT_QUEST_2")
               $gold_2 = Item::get(Item::GOLD_INGOT, 0, $amount)
               $p->getInventory()->addItem($gold_2);
-              break;
+              $p->sendPopup(TF:: GREEN . "Congratulations, you leveled up!")
+            } else {
+              $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
             }
+              break;
+        
         }
     }
