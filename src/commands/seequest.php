@@ -57,12 +57,12 @@ class seequest extends PluginBase {
 
           case "4":
             if($p->hasPermission("quest.4.completed")) {
-              $p->sendMessage(TF:: GREEN . "Quest 4 - Filling the Well - Completed!");
-              $p->sendMessage(TF:: AQUA . "Collect 1 water bucket.");
+              $p->sendMessage(TF:: GREEN . "Quest 4 - Shearing the Sheep - Completed!");
+              $p->sendMessage(TF:: AQUA . "Collect 1 shears.");
               $p->sendMessage(TF:: GREEN . "lvl. 3");
             } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() > 2) {
-              $p->sendMessage(TF:: YELLOW . "Quest 4 - Filling the Well - Uncompleted!");
-              $p->sendMessage(TF:: AQUA . "Collect 1 water bucket.");
+              $p->sendMessage(TF:: YELLOW . "Quest 4 - Shearing the Sheep - Uncompleted!");
+              $p->sendMessage(TF:: AQUA . "Collect 1 shears.");
               $p->sendMessage(TF:: YELLOW . "lvl. 3");
             } else {
               $p->sendMessage(TF:: RED . "You have not started this quest.");
