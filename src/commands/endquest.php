@@ -6,6 +6,7 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\item\Item;
 
 class endquest extends PluginBase {
 
@@ -14,6 +15,15 @@ class endquest extends PluginBase {
       case "endquest":
         switch(strtolower(array_shift($args))) {
           case: "1":
-            if($p->hasPermission("quest.1.cancomplete") || $p->) 
+            if($p->hasPermission("quest.1.cancomplete") || $p->getInventory()->getId(296)->getCount() > 4) {
+              $p->getInventory()->removeItem(296);
+              $p->givePermission("quest.1.completed");
+              $p->addExpLevel(1);
+              $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
+              $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
+              $amount = $this->config->get("GOLD_AMOUNT_QUEST_1")
+              $gold_1 = Item::get(Item::GOLD_INGOT, 0, $amount)
+              $p->getInventory()->addItem($gold_1);
+            } 
         }
     }
