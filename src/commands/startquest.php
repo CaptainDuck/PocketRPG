@@ -114,7 +114,7 @@ class startquest extends PluginBase {
             break;
           
           default:
-            return false;
+            $p->sendMessage(TF:: RED . "Please specify the number of a quest.");
         }
       return true;
     default:
