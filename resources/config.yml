@@ -1,1 +1,4 @@
-Making this soon...
+#Configuration for Quests plugin
+
+#Amount of gold people will earn for completing a quest:
+GOLD_AMOUNT_QUEST_1:
