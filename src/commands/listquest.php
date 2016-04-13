@@ -5,11 +5,8 @@ namespace Sandertv\Quests;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
-use pocketmine\event\listener;
 use pocketmine\command\command;
 use pocketmine\command\commandSender;
-use pocketmine\command\commandExecutor;
-use pocketmine\item\item;
 
 class listquest extends PluginBase implements Listener {
   
