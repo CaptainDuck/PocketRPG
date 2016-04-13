@@ -17,7 +17,7 @@ class seequest extends PluginBase {
               $p->sendMessage(TF:: GRAY . "Quest 1 - Helping the Farmer "TF:: GREEN . "- Completed!");
               $p->sendMessage(TF:: AQUA . "Collect 5 pieces of wheat.");
               $p->sendMessage(TF:: GREEN . "lvl. 0");
-            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() = 0) {
+            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() > -1) {
               $p->sendMessage(TF:: GRAY . "Quest 1 - Helping the Farmer "TF:: RED . "- Uncompleted!");
               $p->sendMessage(TF:: AQUA . "Collect 5 pieces of wheat.");
               $p->sendMessage(TF:: YELLOW . "lvl. 0");
@@ -31,7 +31,7 @@ class seequest extends PluginBase {
               $p->sendMessage(TF:: GRAY . "Quest 2 - Not enough Trees "TF:: GREEN . "- Completed!");
               $p->sendMessage(TF:: AQUA . "Collect 16 Saplings.");
               $p->sendMessage(TF:: GREEN . "lvl. 1");
-            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() = 1) {
+            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() > 0) {
               $p->sendMessage(TF:: GRAY . "Quest 2 - Not enough Trees "TF:: RED . "- Uncompleted!");
               $p->sendMessage(TF:: AQUA . "Collect 16 Saplings.");
               $p->sendMessage(TF:: YELLOW . "lvl. 1");
@@ -45,7 +45,7 @@ class seequest extends PluginBase {
               $p->sendMessage(TF:: GRAY . "Quest 3 - Searching the Stick "TF:: GREEN . "- Completed!");
               $p->sendMessage(TF:: AQUA . "Collect 1 stick.");
               $p->sendMessage(TF:: GREEN . "lvl. 2");
-            } elseif($p->hasPermission("quest.3.cancomplete") || $p->getExpLevel() = 2) {
+            } elseif($p->hasPermission("quest.3.cancomplete") || $p->getExpLevel() > 1) {
               $p->sendMessage(TF:: GRAY . "Quest 3 - Searching the Stick "TF:: RED . "- Uncompleted!");
               $p->sendMessage(TF:: AQUA . "Collect 1 stick.");
               $p->sendMessage(TF:: YELLOW . "lvl. 2");
@@ -59,7 +59,7 @@ class seequest extends PluginBase {
               $p->sendMessage(TF:: GRAY . "Quest 4 - Filling the Well "TF:: GREEN . "- Completed!");
               $p->sendMessage(TF:: AQUA . "Collect 1 water bucket.");
               $p->sendMessage(TF:: GREEN . "lvl. 3");
-            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() = 3) {
+            } elseif($p->hasPermission("quest.1.cancomplete") || $p->getExpLevel() > 2) {
               $p->sendMessage(TF:: GRAY . "Quest 4 - Filling the Well "TF:: RED . "- Uncompleted!");
               $p->sendMessage(TF:: AQUA . "Collect 1 water bucket.");
               $p->sendMessage(TF:: YELLOW . "lvl. 3");
@@ -67,8 +67,98 @@ class seequest extends PluginBase {
               $p->sendMessage(TF:: RED . "You have not started this quest.");
             }
             break;
+            
+          case "5":
+            if($p->hasPermission("quest.5.completed")) {
+              $p->sendMessage(TF:: GRAY . "Quest 5 - The lost Gem "TF:: GREEN . "- Completed!");
+              $p->sendMessage(TF:: AQUA . "Collect 1 Emerald.");
+              $p->sendMessage(TF:: GREEN . "lvl. 4");
+            } elseif($p->hasPermission("quest.5.cancomplete") || $p->getExpLevel() > 3) {
+              $p->sendMessage(TF:: GRAY . "Quest 5 - The lost Gem "TF:: RED . "- Uncompleted!");
+              $p->sendMessage(TF:: AQUA . "Collect 1 Emerald.");
+              $p->sendMessage(TF:: YELLOW . "lvl. 4");
+            } else {
+              $p->sendMessage(TF:: RED . "You have not started this quest.");
+            }
+            break;
+            
+          case "6":
+            if($p->hasPermission("quest.6.completed")) {
+              $p->sendMessage(TF:: GRAY . "Quest 6 - Freezingly Cold "TF:: GREEN . "- Completed!");
+              $p->sendMessage(TF:: AQUA . "Collect 32 Ice blocks.");
+              $p->sendMessage(TF:: GREEN . "lvl. 5");
+            } elseif($p->hasPermission("quest.6.cancomplete") || $p->getExpLevel() > 4) {
+              $p->sendMessage(TF:: GRAY . "Quest 6 - Freezingly Cold "TF:: RED . "- Uncompleted!");
+              $p->sendMessage(TF:: AQUA . "Collect 32 Ice bocks.");
+              $p->sendMessage(TF:: YELLOW . "lvl. 5");
+            } else {
+              $p->sendMessage(TF:: RED . "You have not started this quest.");
+            }
+            break;
+            
+          case "7":
+            if($p->hasPermission("quest.7.completed")) {
+              $p->sendMessage(TF:: GRAY . "Quest 7 - Gravedigger "TF:: GREEN . "- Completed!");
+              $p->sendMessage(TF:: AQUA . "Collect 5 rotten flesh and 5 bones.");
+              $p->sendMessage(TF:: GREEN . "lvl. 6");
+            } elseif($p->hasPermission("quest.7.cancomplete") || $p->getExpLevel() > 5) {
+              $p->sendMessage(TF:: GRAY . "Quest 7 - Gravedigger "TF:: RED . "- Uncompleted!");
+              $p->sendMessage(TF:: AQUA . "Collect 5 rotten flesh and 5 bones.");
+              $p->sendMessage(TF:: YELLOW . "lvl. 6");
+            } else {
+              $p->sendMessage(TF:: RED . "You have not started this quest.");
+            }
+            break;
+            
+          case "8":
+            if($p->hasPermission("quest.8.completed")) {
+              $p->sendMessage(TF:: GRAY . "Quest 8 - Fish Galore "TF:: GREEN . "- Completed!");
+              $p->sendMessage(TF:: AQUA . "Collect 16 raw fish.");
+              $p->sendMessage(TF:: GREEN . "lvl. 7");
+            } elseif($p->hasPermission("quest.8.cancomplete") || $p->getExpLevel() > 6) {
+              $p->sendMessage(TF:: GRAY . "Quest 8 - Fish Galore "TF:: RED . "- Uncompleted!");
+              $p->sendMessage(TF:: AQUA . "Collect 16 raw fish.");
+              $p->sendMessage(TF:: YELLOW . "lvl. 7");
+            } else {
+              $p->sendMessage(TF:: RED . "You have not started this quest.");
+            }
+            break;
+            
+          case "9":
+            if($p->hasPermission("quest.9.completed")) {
+              $p->sendMessage(TF:: GRAY . "Quest 9 - Burning Souls "TF:: GREEN . "- Completed!");
+              $p->sendMessage(TF:: AQUA . "Collect 5 blaze powder and 5 blaze rods.");
+              $p->sendMessage(TF:: GREEN . "lvl. 8");
+            } elseif($p->hasPermission("quest.8.cancomplete") || $p->getExpLevel() > 7) {
+              $p->sendMessage(TF:: GRAY . "Quest 9 - Burning Souls "TF:: RED . "- Uncompleted!");
+              $p->sendMessage(TF:: AQUA . "Collect 5 blaze powder and 5 blaze rods.");
+              $p->sendMessage(TF:: YELLOW . "lvl. 8");
+            } else {
+              $p->sendMessage(TF:: RED . "You have not started this quest.");
+            }
+            break;
+            
+          case "10":
+            if($p->hasPermission("quest.10.completed")) {
+              $p->sendMessage(TF:: GRAY . "Quest 10 - The Experiment "TF:: GREEN . "- Completed!");
+              $p->sendMessage(TF:: AQUA . "Collect 10 glowstone and 10 redstone.");
+              $p->sendMessage(TF:: GREEN . "lvl. 9");
+            } elseif($p->hasPermission("quest.8.cancomplete") || $p->getExpLevel() > 8) {
+              $p->sendMessage(TF:: GRAY . "Quest 10 - The Experiment "TF:: RED . "- Uncompleted!");
+              $p->sendMessage(TF:: AQUA . "Collect 10 glowstone and 10 redstone.");
+              $p->sendMessage(TF:: YELLOW . "lvl. 9");
+            } else {
+              $p->sendMessage(TF:: RED . "You have not started this quest.");
+            }
+            break;
+            
+            return true;
+          default:
+            $p->sendMessage(TF:: RED . "Please type in a quest number.");
         }
+      return true;
+    default:
+      return false;
     }
-
   }
 }
