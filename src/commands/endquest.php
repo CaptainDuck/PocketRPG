@@ -21,7 +21,7 @@ class endquest extends PluginBase {
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
-              $amount = $this->config->get("GOLD_AMOUNT_QUEST_1")
+              $amount_1 = $this->config->get("GOLD_AMOUNT_QUEST_1")
               $gold_1 = Item::get(Item::GOLD_INGOT, 0, $amount)
               $p->getInventory()->addItem($gold_1);
               break;
@@ -33,7 +33,7 @@ class endquest extends PluginBase {
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
-              $amount = $this->config->get("GOLD_AMOUNT_QUEST_2")
+              $amount_2 = $this->config->get("GOLD_AMOUNT_QUEST_2")
               $gold_2 = Item::get(Item::GOLD_INGOT, 0, $amount)
               $p->getInventory()->addItem($gold_2);
               break;
