@@ -45,8 +45,8 @@ class startquest extends PluginBase {
 
           case "4":
             if($p->getExpLevel() > 2) {
-              $p->sendMessage(TF::GRAY . "Quest started: Filling the Well");
-              $p->sendMessage(TF::AQUA . "Find a water Bucket");
+              $p->sendMessage(TF::GRAY . "Quest started: Shearing the Sheap");
+              $p->sendMessage(TF::AQUA . "Collect 1 shears");
               $p->givePermission("quest.4.cancomplete");
             } else {
               $p->sendMessage(TF:: RED . "You are not the right level to start this quest.");
