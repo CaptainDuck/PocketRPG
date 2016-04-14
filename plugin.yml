@@ -1,5 +1,5 @@
 name: Quests
-main: Sandertv\Quests\main
+main: Sandertv\Quests\src\main
 version: 0.0.1
 api: [2.0.0]
 author: Sandertv
