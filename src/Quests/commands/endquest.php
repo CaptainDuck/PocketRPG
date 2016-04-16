@@ -7,6 +7,8 @@ use pocketmine\utils\TextFormat as TF;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\item\Item;
+use pocketmine\Player;
+use pocketmine\Server;
 
 class endquest extends PluginBase {
 
