@@ -7,6 +7,8 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\command\command;
 use pocketmine\command\commandSender;
+use pocketmine\Player;
+use pocketmine\Server;
 
 class listquest extends PluginBase implements Listener {
   
