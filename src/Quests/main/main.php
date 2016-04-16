@@ -4,6 +4,7 @@ namespace Quests\main;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
+use pocketmine\Server;
 
 class main extends PluginBase {
   
