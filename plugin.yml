@@ -1,5 +1,5 @@
 name: PocketRPG
-main: Sandertv\Quests\main\main
+main: Quests\main\main
 version: 0.0.1
 api: [1.0.0, 2.0.0, 3.0.0]
 author: Sandertv
