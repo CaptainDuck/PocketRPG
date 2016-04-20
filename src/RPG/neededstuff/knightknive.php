@@ -30,9 +30,9 @@ class knightknive extends PluginBase implements Listener {
             $y = $hit->y;
             $z = $hit->z;
             $hitpos = $hit->getPosition(new Vector3($x, $y, $z));
-            $level->addParticle(new LavaParticle($hitpos));
-            $this->$hit->setKnockBack(2);
-            $hit->
+            $level->addParticle(new CritialParticle($hitpos));
+            $this->setKnockBack(2);
+            $this->setDamage(getDamage() + 5);
           }
         }
       }
