@@ -13,7 +13,7 @@ use pocketmine/event/entity/EntityDamageEvent;
 use pocketmine/entity/Living;
 use pocketmine/math/Vector3;
 use pocketmine/level/Position;
-use pocketmine/level/particle/LavaParticle;
+use pocketmine/level/particle/CriticalParticle;
 use pocketmine/Player;
 use pocketmine/Server;
 
