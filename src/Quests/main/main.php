@@ -1,6 +1,6 @@
 <?php
 
-namespace Quests\main;
+namespace Sandertv/PocketRPG;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
