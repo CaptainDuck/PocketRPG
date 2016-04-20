@@ -27,6 +27,8 @@ class endquest extends PluginBase {
               $gold_1 = Item::get(Item::GOLD_INGOT, 0, $amount_1);
               $p->getInventory()->addItem($gold_1);
               $p->sendPopup(TF:: GREEN . "You leveled up!");
+            } elseif($p->hasPermission("quest.1.completed")) {
+              $p->sendMessage(TF:: RED . "You already finished this quest!");
             } else {
               $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
             }
@@ -43,6 +45,8 @@ class endquest extends PluginBase {
               $gold_2 = Item::get(Item::GOLD_INGOT, 0, $amount_2);
               $p->getInventory()->addItem($gold_2);
               $p->sendPopup(TF:: GREEN . "You leveled up!");
+            } elseif($p->hasPermission("quest.2.completed")) {
+              $p->sendMessage(TF:: RED . "You already finished this quest!");
             } else {
               $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
             }
@@ -59,6 +63,8 @@ class endquest extends PluginBase {
               $gold_3 = Item::get(Item::GOLD_INGOT, 0, $amount_3);
               $p->getInventory()->addItem($gold_3);
               $p->sendPopup(TF:: GREEN . "You leveled up!");
+            } elseif($p->hasPermission("quest.3.completed")) {
+              $p->sendMessage(TF:: RED . "You already finished this quest!");
             } else {
               $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
             }
@@ -75,6 +81,8 @@ class endquest extends PluginBase {
               $gold_4 = Item::get(Item::GOLD_INGOT, 0, $amount_4);
               $p->getInventory()->addItem($gold_4);
               $p->sendPopup(TF:: GREEN . "You leveled up!");
+            } elseif($p->hasPermission("quest.4.completed")) {
+              $p->sendMessage(TF:: RED . "You already finished this quest!");
             } else {
               $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
             }
@@ -91,6 +99,8 @@ class endquest extends PluginBase {
               $gold_5 = Item::get(Item::GOLD_INGOT, 0, $amount_5);
               $p->getInventory()->addItem($gold_5);
               $p->sendPopup(TF:: GREEN . "You leveled up!");
+            } elseif($p->hasPermission("quest.5.completed")) {
+              $p->sendMessage(TF:: RED . "You already finished this quest!");
             } else {
               $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
             }
