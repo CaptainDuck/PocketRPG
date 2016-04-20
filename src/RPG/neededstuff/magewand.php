@@ -2,6 +2,10 @@
 
 namespace RPG/neededstuff;
 
+/////////////////
+// Mage weapon //
+/////////////////
+
 use pocketmine/plugin/PluginBase;
 use pocketmine/event/Listener;
 use pocketmine/event/entity/EntityDamageByEntityEvent;
