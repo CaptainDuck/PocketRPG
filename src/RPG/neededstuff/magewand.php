@@ -1,6 +1,6 @@
 <?php
 
-namespace RPG/neededstuff;
+namespace Sandertv/PocketRPG;
 
 /////////////////
 // Mage weapon //
