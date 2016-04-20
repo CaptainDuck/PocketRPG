@@ -31,9 +31,9 @@ class magewand extends PluginBase implements Listener {
             $z = $hit->z;
             $hitpos = $hit->getPosition(new Vector3($x, $y, $z));
             $level->addParticle(new LavaParticle($hitpos));
-            $this->$hit->setKnockBack(2);
+            $this->setKnockBack(1);
             $hit->setOnFire(4);
-            $hit->
+            $this->setDamage(getDamage() + 4)
           }
         }
       }
