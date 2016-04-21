@@ -3,7 +3,7 @@
 namespace Sandertv/PocketRPG;
 
 ///////////////////
-// Knight weapon //
+// Warrior weapon //
 ///////////////////
 
 use pocketmine/plugin/PluginBase;
