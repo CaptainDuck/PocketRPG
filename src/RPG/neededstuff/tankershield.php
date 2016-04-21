@@ -10,10 +10,11 @@ use pocketmine/plugin/PluginBase;
 use pocketmine/event/Listener;
 use pocketmine/event/entity/EntityDamageByEntityEvent;
 use pocketmine/event/entity/EntityDamageEvent;
+use pocketmine/event/player/PlayerItemHeldEvent;
 use pocketmine/entity/Living;
 use pocketmine/math/Vector3;
 use pocketmine/level/Position;
-use pocketmine/level/particle/LavaParticle;
+use pocketmine/level/particle/ExplodeParticle;
 use pocketmine/Player;
 use pocketmine/Server;
 
@@ -30,12 +31,19 @@ class knightknive extends PluginBase implements Listener {
             $y = $hit->y;
             $z = $hit->z;
             $hitpos = $hit->getPosition(new Vector3($x, $y, $z));
-            $level->addParticle(new CritialParticle($hitpos));
+            $level->addParticle(new ExplodeParticle($hitpos));
             $this->setKnockBack(3);
             $this->setDamage(getDamage() + 3);
           }
         }
       }
   }
+    public function onItemHeld(PlayerItemHeldEvent $event2) {
+        $p = $event2->getPlayer();
+        if($p->getItemInHand()->getId() == 328) {
+            $effect = Effect::getEffect(11)->setDuration(30)->setAmplifier(2)->setVisible(true);
+            $p->addEffect($effect);
+        }
+    }
 }
 
