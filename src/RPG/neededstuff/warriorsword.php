@@ -25,14 +25,13 @@ class knightknive extends PluginBase implements Listener {
         $damager = $event->getDamager();
         $level = $this->config->get("RPG_LEVEL");
         if($damager->getLevel() == $configlevel) {
-          if($damager->getItemInHand()->getId() == 288) {
+          if($damager->getItemInHand()->getId() == 267) {
             $x = $hit->x;
             $y = $hit->y;
             $z = $hit->z;
             $hitpos = $hit->getPosition(new Vector3($x, $y, $z));
             $level->addParticle(new CritialParticle($hitpos));
             $this->setKnockBack(2);
-            $this->setDamage(getDamage() + 6);
           }
         }
       }
