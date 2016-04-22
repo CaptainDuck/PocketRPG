@@ -52,8 +52,9 @@ class rpgstart extends PluginBase {
               $p->sendMessage(TF:: RED . "You have already picked a class!")
             } else {
               $p->sendMessage(TF:: AQUA . "You have joined the world as an assassin!");
+              $cloak = Item::get(Item::CLOCK, 0, 1);
               $knive = Item::get(Item::FEATHER, 0, 1);
-              $p->getInventory->addItem($knive);
+              $p->getInventory->addItem($knive, $cloak);
               $p->givePermission("class.chosen");
             }
             break;
