@@ -10,6 +10,9 @@ use pocketmine/Player;
 
 class rpgstart extends PluginBase {
   
+  $level = $p->getLevel();
+  $cfglevel = $this->config->get("RPG_LEVEL");
+  
   public function onCommand(Command $cmd, CommandSender $p, $label, array $args) {
     switch($cmd->getName) {
       case "rpgstart":
@@ -22,6 +25,7 @@ class rpgstart extends PluginBase {
               $wand = Item::get(Item::STICK, 0, 1);
               $p->getInventory->addItem($wand);
               $p->givePermission("class.chosen");
+              $p->switchLevel($level $cfglevel);
             }
             break;
             
@@ -33,6 +37,7 @@ class rpgstart extends PluginBase {
               $sword = Item::get(Item::IRON_SWORD, 0, 1);
               $p->getInventory->addItem($sword);
               $p->givePermission("class.chosen");
+              $p->switchLevel($level $cfglevel);
             }
             break;
             
@@ -44,6 +49,7 @@ class rpgstart extends PluginBase {
               $shield = Item::get(Item::MINECART, 0, 1);
               $p->getInventory->addItem($shield);
               $p->givePermission("class.chosen");
+              $p->switchLevel($level $cfglevel);
             }
             break;
             
@@ -56,6 +62,7 @@ class rpgstart extends PluginBase {
               $knive = Item::get(Item::FEATHER, 0, 1);
               $p->getInventory->addItem($knive, $cloak);
               $p->givePermission("class.chosen");
+              $p->switchLevel($level $cfglevel);
             }
             break;
         }
