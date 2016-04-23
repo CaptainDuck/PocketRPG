@@ -15,6 +15,6 @@ This plugin creates quests for your players to start and finish to get rewards a
 Coming up:
 - Classes players can choose to play through the quests. Mage, Warrior, (another class, feel free to leave a suggestion in issues).
 - Specialized weapons for all classes.
-- More quests.
+- More quests, maybe configurable ones.
 - Bug fixes of course.
 - More features, leave suggestions in the issues.
