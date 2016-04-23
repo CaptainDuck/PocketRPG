@@ -1,5 +1,8 @@
 #Configuration for Quests plugin
 
+#level you want the RPG to work in:
+RPG_LEVEL:
+
 #Amount of gold people will earn for completing a quest:
 GOLD_AMOUNT_QUEST_1:
 GOLD_AMOUNT_QUEST_2:
@@ -11,6 +14,3 @@ GOLD_AMOUNT_QUEST_7:
 GOLD_AMOUNT_QUEST_8:
 GOLD_AMOUNT_QUEST_9:
 GOLD_AMOUNT_QUEST_10:
-
-#level you want the RPG to work in:
-RPG_LEVEL:
