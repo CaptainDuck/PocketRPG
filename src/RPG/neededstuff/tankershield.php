@@ -1,6 +1,6 @@
 <?php
 
-namespace Sandertv/PocketRPG;
+namespace Sandertv\PocketRPG;
 
 ///////////////////
 // Tanker shield //
