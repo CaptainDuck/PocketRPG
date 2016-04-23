@@ -1,5 +1,5 @@
 name: PocketRPG
-main: main
+main: PocketRPG\main
 version: 0.1.0
 api: [2.0.0]
 author: Sandertv
