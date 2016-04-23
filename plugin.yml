@@ -21,3 +21,7 @@ commands:
     description: Finish a quest
     usage: /endquest <number>
     permission: default
+  startrpg:
+    description: Start your adventure
+    usage: /startrpg <class>
+    permission: default
