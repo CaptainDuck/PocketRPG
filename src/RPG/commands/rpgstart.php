@@ -1,12 +1,13 @@
 <?php
 
-namespace Sandertv/PocketRPG;
+namespace Sandertv\PocketRPG;
 
-use pocketmine/plugin/PluginBase;
-use pocketmine/command/Command;
-use pocketmine/command/CommandSender;
-use pocketmine/Server;
-use pocketmine/Player;
+use pocketmine\plugin\PluginBase;
+use pocketmine\utils\TextFormat as TF;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\Server;
+use pocketmine\Player;
 
 class rpgstart extends PluginBase {
   
