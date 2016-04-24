@@ -1,6 +1,6 @@
 <?php
 
-namespace PocketRPG/RPG/neededstuff;
+namespace PocketRPG\RPG\neededstuff;
 
 /////////////////
 // Mage weapon //
