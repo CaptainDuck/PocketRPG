@@ -1,6 +1,6 @@
 <?php
 
-namespace Sandertv\PocketRPG;
+namespace PocketRPG\Quests\commands;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as TF;
