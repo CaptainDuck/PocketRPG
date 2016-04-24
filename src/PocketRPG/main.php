@@ -1,6 +1,6 @@
 <?php
 
-namespace Sandertv\PocketRPG;
+namespace PocketRPG;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
