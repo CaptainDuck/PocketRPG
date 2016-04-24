@@ -14,8 +14,9 @@ class main extends PluginBase {
   
   public function onEnable() {
     $this->getLogger()->info("Enabling PocketRPG!");
-      @mkdir($this->getDataFolder());
-      $this->config = new Config ($this->getDataFolder() . "config.yml" , Config::YAML, array());
+    @mkdir($this->getDataFolder());
+    $this->saveResource("config.yml");
+    $this->config = new Config($this->getDataFolder(). "config.yml", Config::YAML);
   }
   
   public function onDisable() {
