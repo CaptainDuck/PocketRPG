@@ -1,8 +1,11 @@
 <?php
+
 namespace Sandertv\PocketRPG;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\Server;
+
 class main extends PluginBase {
   
   public function onLoad() {
