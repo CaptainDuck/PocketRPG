@@ -1,6 +1,6 @@
 <?php
 
-namespace PocketRPG;
+namespace PocketRPG\RPG\neededstuff;
 
 /////////////////////
 // Assassin Dagger //
