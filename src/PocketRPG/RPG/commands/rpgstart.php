@@ -26,6 +26,7 @@ class rpgstart extends PluginBase {
               $wand = Item::get(Item::STICK, 0, 1);
               $p->getInventory->addItem($wand);
               $p->givePermission("class.chosen");
+              $p->givePermission("class.mage");
               $p->switchLevel($level $cfglevel);
             }
             break;
@@ -38,6 +39,7 @@ class rpgstart extends PluginBase {
               $sword = Item::get(Item::IRON_SWORD, 0, 1);
               $p->getInventory->addItem($sword);
               $p->givePermission("class.chosen");
+              $p->givePermission("class.warrior");
               $p->switchLevel($level $cfglevel);
             }
             break;
@@ -50,6 +52,7 @@ class rpgstart extends PluginBase {
               $shield = Item::get(Item::MINECART, 0, 1);
               $p->getInventory->addItem($shield);
               $p->givePermission("class.chosen");
+              $p->givePermission("class.tanker");
               $p->switchLevel($level $cfglevel);
             }
             break;
@@ -63,6 +66,7 @@ class rpgstart extends PluginBase {
               $knive = Item::get(Item::FEATHER, 0, 1);
               $p->getInventory->addItem($knive, $cloak);
               $p->givePermission("class.chosen");
+              $p->givePermission("class.assassin");
               $p->switchLevel($level $cfglevel);
             }
             break;
