@@ -13,6 +13,7 @@ class main extends PluginBase {
   }
   
   public function onEnable() {
+    $this->getServer()->getPluginManager()->registerEvents;
     $this->getLogger()->info("Enabling PocketRPG!");
     @mkdir($this->getDataFolder());
     $this->saveResource("config.yml");
