@@ -7,4 +7,7 @@ use pocketmine/utils/TextFormat as TF;
 use pocketmine/Server;
 use pocketmine/Player;
 
-class classchat extends PluginBase
+class classchat extends PluginBase {
+  
+  
+}
