@@ -10,4 +10,7 @@ use pocketmine\command\CommandSender;
 
 class partycreate extends PluginBase implements Listener {
   
+  public function onCommand(CommandSender $p, Command $cmd, $label, array $args) {
+    
+  }
 }
