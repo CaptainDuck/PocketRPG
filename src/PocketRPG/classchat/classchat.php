@@ -27,9 +27,7 @@ class classchat extends PluginBase implements Listener {
       } elseif($p->hasPermission("class.assassin")) {
         $this->getServer()->broadcastMessage("<$player->getName()> Assassin > $event->getMessage()");
         $event->setCancelled();
-      } else  {
-        $this->getServer()->broadcastMessage("<$player->getName()> $event->getMessage()");
-        $event->setCancelled();
+      } else {
       }
     }
   }
