@@ -25,8 +25,8 @@ class rpgstart extends PluginBase {
               $p->sendMessage(TF:: AQUA . "You have joined the world as a mage!");
               $wand = Item::get(Item::STICK, 0, 1);
               $p->getInventory->addItem($wand);
-              $p->givePermission("class.chosen");
-              $p->givePermission("class.mage");
+              $p->setPermission("class.chosen");
+              $p->setPermission("class.mage");
               $p->switchLevel($level $cfglevel);
             }
             break;
@@ -38,8 +38,8 @@ class rpgstart extends PluginBase {
               $p->sendMessage(TF:: AQUA . "You have joined the world as a warrior!");
               $sword = Item::get(Item::IRON_SWORD, 0, 1);
               $p->getInventory->addItem($sword);
-              $p->givePermission("class.chosen");
-              $p->givePermission("class.warrior");
+              $p->setPermission("class.chosen");
+              $p->setPermission("class.warrior");
               $p->switchLevel($level $cfglevel);
             }
             break;
@@ -51,8 +51,8 @@ class rpgstart extends PluginBase {
               $p->sendMessage(TF:: AQUA . "You have joined the world as a tanker!");
               $shield = Item::get(Item::MINECART, 0, 1);
               $p->getInventory->addItem($shield);
-              $p->givePermission("class.chosen");
-              $p->givePermission("class.tanker");
+              $p->setPermission("class.chosen");
+              $p->setPermission("class.tanker");
               $p->switchLevel($level $cfglevel);
             }
             break;
@@ -65,8 +65,8 @@ class rpgstart extends PluginBase {
               $cloak = Item::get(Item::CLOCK, 0, 1);
               $knive = Item::get(Item::FEATHER, 0, 1);
               $p->getInventory->addItem($knive, $cloak);
-              $p->givePermission("class.chosen");
-              $p->givePermission("class.assassin");
+              $p->setPermission("class.chosen");
+              $p->setPermission("class.assassin");
               $p->switchLevel($level $cfglevel);
             }
             break;
