@@ -19,7 +19,7 @@ class endquest extends PluginBase {
           case "1":
             if($p->hasPermission("quest.1.cancomplete") || $p->getInventory()->getId(296)->getCount() > 4) {
               $p->getInventory()->removeItem(296);
-              $p->givePermission("quest.1.completed");
+              $p->setPermission("quest.1.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -37,7 +37,7 @@ class endquest extends PluginBase {
           case "2":
             if($p->hasPermission("quest.2.cancomplete") || $p->getInventory()->getId(6)->getCount() > 15) {
               $p->getInventory()->removeItem(6);
-              $p->givePermission("quest.2.completed");
+              $p->setPermission("quest.2.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -55,7 +55,7 @@ class endquest extends PluginBase {
           case "3":
             if($p->hasPermission("quest.3.cancomplete") || $p->getInventory()->getId(280)->getCount() > 0) {
               $p->getInventory()->removeItem(280);
-              $p->givePermission("quest.3.completed");
+              $p->setPermission("quest.3.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -73,7 +73,7 @@ class endquest extends PluginBase {
           case "4":
             if($p->hasPermission("quest.4.cancomplete") || $p->getInventory()->getId(359)->getCount() > 0) {
               $p->getInventory()->removeItem(359);
-              $p->givePermission("quest.4.completed");
+              $p->setPermission("quest.4.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -91,7 +91,7 @@ class endquest extends PluginBase {
           case "5":
             if($p->hasPermission("quest.5.cancomplete") || $p->getInventory()->getId(388)->getCount() > 0) {
               $p->getInventory()->removeItem(388);
-              $p->givePermission("quest.5.completed");
+              $p->setPermission("quest.5.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -109,7 +109,7 @@ class endquest extends PluginBase {
           case "6":
             if($p->hasPermission("quest.6.cancomplete") || $p->getInventory()->getId(79)->getCount() > 31) {
               $p->getInventory()->removeItem(79);
-              $p->givePermission("quest.6.completed");
+              $p->setPermission("quest.6.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -125,7 +125,7 @@ class endquest extends PluginBase {
           case "7":
             if($p->hasPermission("quest.7.cancomplete") || $p->getInventory()->getId(352)->getCount() > 4 || $p->getInventory()->getId(367)->getCount() > 4) {
               $p->getInventory()->removeItem(79);
-              $p->givePermission("quest.7.completed");
+              $p->setPermission("quest.7.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -141,7 +141,7 @@ class endquest extends PluginBase {
           case "8":
             if($p->hasPermission("quest.8.cancomplete") || $p->getInventory()->getId(349)->getCount() > 15) {
               $p->getInventory()->removeItem(349);
-              $p->givePermission("quest.8.completed");
+              $p->setPermission("quest.8.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -157,7 +157,7 @@ class endquest extends PluginBase {
           case "9":
             if($p->hasPermission("quest.9.cancomplete") || $p->getInventory()->getId(369)->getCount() > 4 || $p->getInventory()->getId(377)->getCount() > 4) {
               $p->getInventory()->removeItem(369, 377);
-              $p->givePermission("quest.9.completed");
+              $p->setPermission("quest.9.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
@@ -173,7 +173,7 @@ class endquest extends PluginBase {
           case "10":
             if($p->hasPermission("quest.10.cancomplete") || $p->getInventory()->getId(348)->getCount() > 9 || $p->getInventory()->getId(331)->getCount() > 9) {
               $p->getInventory()->removeItem(348, 331);
-              $p->givePermission("quest.10.completed");
+              $p->setPermission("quest.10.completed");
               $p->addExpLevel(1);
               $p->sendMessage(TF:: GREEN . "Congratulations, you have completed the quest!");
               $p->sendMessage(TF:: GRAY . "You have been awarded gold Ingots!");
