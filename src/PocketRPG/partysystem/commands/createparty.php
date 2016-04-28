@@ -22,5 +22,6 @@ class partycreate extends PluginBase implements Listener {
         $p->setPermission("party.joined");
       }
     }
+  return true;
   }
 }
