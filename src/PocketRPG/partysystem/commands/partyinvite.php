@@ -13,7 +13,9 @@ class partyinvite extends PluginBase {
   
   public function onCommand(Command $cmd, CommandSender $p, $label, array $args) {
     if($cmd->getName()) == "partyinvite") {
-      
+      if(!isset($args[0])) {
+        
+      }  
     }
   }
 }
