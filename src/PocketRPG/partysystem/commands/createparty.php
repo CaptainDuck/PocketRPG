@@ -15,11 +15,11 @@ class partycreate extends PluginBase {
       $partyname = $this->$args[0];
       if(!isset($args[0])) {
         $p->sendMessage(TF:: RED . "Please specify your party name.");
-      } elseif($p->hasPermission("party."$partyname"joined")) {
+      } elseif($p->hasPermission("party.joined")) {
         $p->sendMessage(TF:: RED . "You are already in a party!");
       } else {
         $p->sendMessage(TF:: AQUA . "You have started a party named $partyname!");
-        $p->setPermission("party."$partyname"joined");
+        $p->setPermission("party.joined");
       }
     }
   return true;
