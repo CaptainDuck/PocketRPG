@@ -14,6 +14,5 @@ This plugin creates quests for your players to start and finish to get rewards a
 
 Coming up:
 - More classes people can play with.
-- Specialized weapons for all classes.
 - More quests, maybe configurable ones.
 - Bug fixes of course.
