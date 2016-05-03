@@ -20,6 +20,7 @@ class partycreate extends PluginBase {
       } else {
         $p->sendMessage(TF:: AQUA . "You have started a party named $partyname!");
         $p->setPermission("party.joined");
+        $p->setPermission("party." . $args[0] . "");
       }
     }
   return true;
