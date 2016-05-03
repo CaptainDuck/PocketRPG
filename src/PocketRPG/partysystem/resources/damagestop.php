@@ -12,6 +12,14 @@ use PocketRPG\partysystem\commands\partycreate;
 class damageandtag extends partycreate implements Listener {
   
   public function onFight(EntityDamageEvent $event) {
-    
+    if($event instanceof EntityDamageByEntityEvent && $event->getDamager() instanceof Player) {
+      $cfglevel = $this->config->get("RPG_LEVEL");
+      $hit = $event->getPlayer();
+      $damager = $event->getDamager();
+      if($hit->getLevel() == $cfglevel) {
+        if($hit->getNameTag() == $damager->getNameTag()) {
+          $event->setCancelled();
+        }
+      }
   }
 }
