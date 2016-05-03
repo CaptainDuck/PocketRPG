@@ -3,17 +3,18 @@
 
 What does this plugin do?
 
-Currently, not a lot really, it isn't fully working yet.
-This plugin creates quests for your players to start and finish to get rewards and a higher level, which they can unlock new quests with. The quest part of this plugin is finished.
+This plugin makes your server an adventure.
+PocketRPG creates classes, which people can play with in the world you have defined in the config.yml. In this world every class will have specialized weapons/abilities. Additionally, PocketRPG also adds quests, which you need a certain amount of exp. for to start, and those will reward the players with exp and gold(configurable) on completing. 
 
-  Classes being added:
+  Classes added:
 - Mage.
 - Warrior.
 - Tanker.
 - Assassin.
 
 Coming up:
+- Parties.
+- 1v1 system built in the RPG.
 - More classes people can play with.
-- Specialized weapons for all classes.
 - More quests, maybe configurable ones.
 - Bug fixes of course.
