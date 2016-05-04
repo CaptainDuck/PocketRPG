@@ -8,6 +8,8 @@ use pocketmine/event/Listener;
 use pocketmine/event/PlayerChatEvent;
 use pocketmine/Server;
 use pocketmine/Player;
+use pocketmine\utils\Config;
+use PocketRPG\main;
 
 class classchat extends PluginBase implements Listener {
   
