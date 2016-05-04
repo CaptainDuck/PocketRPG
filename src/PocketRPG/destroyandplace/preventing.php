@@ -8,6 +8,7 @@ use pocketmine\event\BlockBreakEvent;
 use pocketmine\event\BlockPlaceEvent;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\Config;
+use PocketRPG\main;
 
 class preventing extends PluginBase implements Listener {
   
