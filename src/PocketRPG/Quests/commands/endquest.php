@@ -16,8 +16,7 @@ class endquest extends PluginBase {
   public function onCommand(Command $cmd, CommandSender $p, $label, array $args) {
     switch($cmd->getName()) {
       case "endquest":
-        switch(strtolower(array_shift($args))) {
-          case "1":
+          if($args[0] == "1") {
             if($p->hasPermission("quest.1.cancomplete") && $p->getInventory()->getId(296)->getCount() > 4) {
               $p->getInventory()->removeItem(296);
               $p->setPermission("quest.1.completed");
@@ -35,7 +34,7 @@ class endquest extends PluginBase {
             }
               break;
               
-          case "2":
+          if($args[0] == "2") {
             if($p->hasPermission("quest.2.cancomplete") && $p->getInventory()->getId(6)->getCount() > 15) {
               $p->getInventory()->removeItem(6);
               $p->setPermission("quest.2.completed");
@@ -53,7 +52,7 @@ class endquest extends PluginBase {
             }
               break;
               
-          case "3":
+          if($args[0] == "3") {
             if($p->hasPermission("quest.3.cancomplete") && $p->getInventory()->getId(280)->getCount() > 0) {
               $p->getInventory()->removeItem(280);
               $p->setPermission("quest.3.completed");
@@ -71,7 +70,7 @@ class endquest extends PluginBase {
             }
               break;
               
-          case "4":
+          if($args[0] == "4") {
             if($p->hasPermission("quest.4.cancomplete") && $p->getInventory()->getId(359)->getCount() > 0) {
               $p->getInventory()->removeItem(359);
               $p->setPermission("quest.4.completed");
@@ -89,7 +88,7 @@ class endquest extends PluginBase {
             }
               break;
               
-          case "5":
+          if($args[0] == "5") {
             if($p->hasPermission("quest.5.cancomplete") && $p->getInventory()->getId(388)->getCount() > 0) {
               $p->getInventory()->removeItem(388);
               $p->setPermission("quest.5.completed");
@@ -107,7 +106,7 @@ class endquest extends PluginBase {
             }
               break;
               
-          case "6":
+          if($args[0] == "6") {
             if($p->hasPermission("quest.6.cancomplete") && $p->getInventory()->getId(79)->getCount() > 31) {
               $p->getInventory()->removeItem(79);
               $p->setPermission("quest.6.completed");
@@ -123,7 +122,7 @@ class endquest extends PluginBase {
             }
               break;
               
-          case "7":
+          if($args[0] == "7") {
             if($p->hasPermission("quest.7.cancomplete") && $p->getInventory()->getId(352)->getCount() > 4 || $p->getInventory()->getId(367)->getCount() > 4) {
               $p->getInventory()->removeItem(79);
               $p->setPermission("quest.7.completed");
@@ -139,7 +138,7 @@ class endquest extends PluginBase {
             }
               break;
               
-          case "8":
+          if($args[0] == "8") {
             if($p->hasPermission("quest.8.cancomplete") && $p->getInventory()->getId(349)->getCount() > 15) {
               $p->getInventory()->removeItem(349);
               $p->setPermission("quest.8.completed");
@@ -155,7 +154,7 @@ class endquest extends PluginBase {
             }
             break;
             
-          case "9":
+          if($args[0] == "9") {
             if($p->hasPermission("quest.9.cancomplete") && $p->getInventory()->getId(369)->getCount() > 4 || $p->getInventory()->getId(377)->getCount() > 4) {
               $p->getInventory()->removeItem(369, 377);
               $p->setPermission("quest.9.completed");
@@ -171,7 +170,7 @@ class endquest extends PluginBase {
             }
             break;
             
-          case "10":
+          if($args[0] == "10") {
             if($p->hasPermission("quest.10.cancomplete") && $p->getInventory()->getId(348)->getCount() > 9 || $p->getInventory()->getId(331)->getCount() > 9) {
               $p->getInventory()->removeItem(348, 331);
               $p->setPermission("quest.10.completed");
@@ -186,11 +185,6 @@ class endquest extends PluginBase {
               $p->sendMessage(TF:: RED . "You can't finish this quest yet!");
             }
             break;
-            
-          default:
-            $p->sendMessage(TF:: RED . "Please specify a quest number.");
-            return true;
-        
         }
         return true;
       default:
