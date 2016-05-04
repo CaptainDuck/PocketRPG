@@ -23,9 +23,10 @@ class preventing extends PluginBase implements Listener {
   }
   
   public function onPlace(BlockPlaceEvent $event2) {
+    $p = $event2->getPlayer();
     if($p instanceof Player) {
       if($p->getLevel() == $cfglevel) {
-        $event->setCancelled();
+        $event2->setCancelled();
         $p->sendMessage(TF:: RED . "You are not allowed to do that here.")
       }
     }
