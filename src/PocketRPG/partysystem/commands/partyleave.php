@@ -8,6 +8,7 @@ use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\command\Command;
 use pocketmine\command/CommandSender;
+use PocketRPG\main;
 
 class partyleave extends PluginBase {
   
