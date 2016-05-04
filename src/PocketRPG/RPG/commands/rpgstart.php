@@ -21,7 +21,7 @@ class rpgstart extends PluginBase {
         switch(strtolower(array_shift($args))) {
           case "mage":
             if($p->hasPermission("class.chosen")) {
-              $p->sendMessage(TF:: RED . "You have already picked a class!")
+              $p->sendMessage(TF:: RED . "You have already picked a class!");
             } else {
               $p->sendMessage(TF:: AQUA . "You have joined the world as a mage!");
               $wand = Item::get(Item::STICK, 0, 1);
@@ -47,7 +47,7 @@ class rpgstart extends PluginBase {
             
           case "tanker":
             if($p->hasPermission("class.chosen")) {
-              $p->sendMessage(TF:: RED . "You have already picked a class!")
+              $p->sendMessage(TF:: RED . "You have already picked a class!");
             } else {
               $p->sendMessage(TF:: AQUA . "You have joined the world as a tanker!");
               $shield = Item::get(Item::MINECART, 0, 1);
@@ -60,7 +60,7 @@ class rpgstart extends PluginBase {
             
           case "assassin":
             if($p->hasPermission("class.chosen")) {
-              $p->sendMessage(TF:: RED . "You have already picked a class!")
+              $p->sendMessage(TF:: RED . "You have already picked a class!");
             } else {
               $p->sendMessage(TF:: AQUA . "You have joined the world as an assassin!");
               $cloak = Item::get(Item::CLOCK, 0, 1);
@@ -68,6 +68,19 @@ class rpgstart extends PluginBase {
               $p->getInventory->addItem($knive, $cloak);
               $p->setPermission("class.chosen");
               $p->setPermission("class.assassin");
+              $p->switchLevel($level $cfglevel);
+            }
+            break;
+          
+          case "archer":
+            if($p->hasPermission("class.chosen")) {
+              $p->sendMessage(TF:: RED . "You have already picked a class!");
+            } else {
+              $p->sendMessage(TF:: AQUA . "You have joined the world as an assassin!");
+              $bow = Item::get(Item::BOW, 0, 1);
+              $p->getInventory->addItem($bow);
+              $p->setPermission("class.chosen");
+              $p->setPermission("class.archer");
               $p->switchLevel($level $cfglevel);
             }
             break;
