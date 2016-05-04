@@ -8,6 +8,7 @@ namespace PocketRPG\RPG\neededstuff;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
+use PocketRPG\main;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\entity\EntityDamageEvent;
