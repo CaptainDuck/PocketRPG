@@ -5,6 +5,7 @@ use pocketmine\Server;
 use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\PlayerQuitEvent;
+use PocketRPG\main;
 
 class partyleaveonquit extends PluginBase implements Listener {
   
