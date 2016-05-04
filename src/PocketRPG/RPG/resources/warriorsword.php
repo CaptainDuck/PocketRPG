@@ -19,7 +19,7 @@ use pocketmine\Player;
 use pocketmine\Server;
 use PocketRPG\main;
 
-class knightknive extends PluginBase implements Listener {
+class warriorsword extends PluginBase implements Listener {
     
     public function onFight(EntityDamageEvent $event) {  
       if($event instanceof EntityDamageByEntityEvent && $event->getDamager() instanceof Player) {
