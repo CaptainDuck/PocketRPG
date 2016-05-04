@@ -8,6 +8,8 @@ use pocketmine\event\EntityDamageEvent;
 use pocketmine\event\EntityDamageByEntityEvent;
 use pocketmine\utils\Config;
 use PocketRPG\partysystem\commands\partycreate;
+use pocketmine\utils\Config;
+use PocketRPG\main;
 
 class damageandtag extends partycreate implements Listener {
   
