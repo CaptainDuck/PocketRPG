@@ -23,4 +23,14 @@ class main extends PluginBase {
   public function onDisable() {
     $this->getLogger()->info("Disabling PocketRPG!");
   }
+  
+  public function __construct(ColorMatch $plugin, Player $player, Arena $arena){
+    parent::__construct($plugin);
+    $this->player = $player;
+    $this->arena = $arena;
+    }
+    
+  public function getPlayer(){
+    return $this->player;
+  }
 }
