@@ -7,6 +7,9 @@ use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\config;
 use pocketmine\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\Player;
+use pocketmine\Server;
+use PocketRPG\main;
 
 class partycreate extends PluginBase {
   
