@@ -6,7 +6,6 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\EntityDamageEvent;
 use pocketmine\event\EntityDamageByEntityEvent;
-use pocketmine\utils\Config;
 use PocketRPG\partysystem\commands\partycreate;
 use pocketmine\utils\Config;
 use PocketRPG\main;
