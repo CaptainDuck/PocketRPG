@@ -8,6 +8,7 @@ use pocketmine/command/CommandSender;
 use pocketmine/utils/TextFormat;
 use pocketmine/Server;
 use pocketmine/Player;
+use PocketRPG\main;
 
 class partyinvite extends PluginBase {
   
