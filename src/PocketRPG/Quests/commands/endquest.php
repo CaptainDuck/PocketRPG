@@ -9,6 +9,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\Server;
+use PocketRPG\main;
 
 class endquest extends PluginBase {
 
